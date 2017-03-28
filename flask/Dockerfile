@@ -11,8 +11,8 @@ RUN yum install -y mysql-server mysql
 RUN yum clean all
 
 # Clone project
-#COPY . /DIR_NAME
-#WORKDIR /DIR_NAME
+COPY . /DIR_NAME
+WORKDIR /DIR_NAME
 
 # Running on container
 RUN pip install -r requirements.txt
