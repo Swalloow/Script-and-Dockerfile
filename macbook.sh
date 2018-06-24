@@ -11,12 +11,8 @@ chsh -s `which zsh`
 
 # powerlevel9k theme
 # add ZSH_THEME="powerlevel9k/powerlevel9k"
-# change powerline fonts in iTerm2
+# change powerline fonts in iTerm2 (D2 Coding 1.3)
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-git clone https://github.com/powerline/fonts.git --depth=1
-cd fonts && ./install.sh
-cd ..
-rm -rf fonts
 
 # zsh-syntax-highlighting zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
@@ -29,7 +25,7 @@ git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh
 #   zsh-autosuggestions
 # )
 
-brew install fzf fasd tree
+brew install fzf fasd tree jq wget
 $(brew --prefix)/opt/fzf/install
 
 # install pyenv
