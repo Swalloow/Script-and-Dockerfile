@@ -33,3 +33,8 @@ brew install pyenv pyenv-virtualenv
 echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
 source ~/.zshrc
+
+# install node, typescript
+brew install node --without-npm
+curl -L https://www.npmjs.com/install.sh | sh
+npm install -g typescript
